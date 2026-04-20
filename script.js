@@ -57,14 +57,36 @@ form.addEventListener('submit', (e) => {
   btnText.textContent = 'Envoi en cours…';
   btn.disabled = true;
 
-  // Simulate send (replace with real backend / formspree / emailjs)
-  setTimeout(() => {
-    form.reset();
-    btn.disabled = false;
-    btnText.textContent = 'Envoyer ma demande';
-    successMsg.classList.add('visible');
-    setTimeout(() => successMsg.classList.remove('visible'), 5000);
-  }, 1200);
+  const payload = {
+    name:    document.getElementById('name').value.trim(),
+    email:   document.getElementById('email').value.trim(),
+    message: document.getElementById('message').value.trim(),
+    phone:   document.getElementById('phone').value.trim(),
+    type:    document.getElementById('type').value,
+  };
+
+  fetch('contact.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  })
+    .then(res => res.json())
+    .then(data => {
+      btn.disabled = false;
+      btnText.textContent = 'Envoyer ma demande';
+      if (data.success) {
+        form.reset();
+        successMsg.classList.add('visible');
+        setTimeout(() => successMsg.classList.remove('visible'), 5000);
+      } else {
+        alert(data.error || 'Une erreur est survenue, veuillez réessayer.');
+      }
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btnText.textContent = 'Envoyer ma demande';
+      alert('Impossible de contacter le serveur. Vérifiez votre connexion.');
+    });
 });
 
 // Remove red border on input
