@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TDL Services — Création de sites web pour professionnels, associations et passionnés de l'automobile et de la moto. Disponible partout en France." />
+  <meta name="keywords" content="création site web, automobile, moto, garage, concessionnaire, association moto, site internet professionnel" />
+  <meta name="author" content="TDL Services" />
+  <meta property="og:title" content="TDL Services — Sites Web Auto & Moto" />
+  <meta property="og:description" content="Votre présence en ligne sur mesure dans l'univers automobile et moto." />
+  <meta property="og:type" content="website" />
+  <title>TDL Services — Création de Sites Web Auto & Moto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-tdl">TDL</span><span class="nav__logo-services">Services</span>
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#pourquoi" class="nav__link">Pourquoi nous</a></li>
+        <li><a href="#processus" class="nav__link">Processus</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Devis gratuit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__gradient"></div>
+    </div>
+    <div class="hero__container">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Disponible partout en France
+      </div>
+      <h1 class="hero__title">
+        Votre site web<br />
+        <span class="hero__title-accent">taillé pour la route</span>
+      </h1>
+      <p class="hero__subtitle">
+        TDL Services crée des sites web percutants pour les <strong>garages, concessionnaires, clubs moto</strong> et tous les passionnés de l'univers automobile et deux-roues.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Prendre rendez-vous</a>
+        <a href="#services" class="btn btn--ghost">Découvrir nos services</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">100%</span>
+          <span class="hero__stat-label">Sur mesure</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">RDV</span>
+          <span class="hero__stat-label">En ligne offert</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">FR</span>
+          <span class="hero__stat-label">Toute la France</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">Ce que nous faisons</span>
+        <h2 class="section__title">Des sites web qui <span class="accent">accélèrent</span> votre business</h2>
+        <p class="section__subtitle">Chaque projet est unique, pensé pour votre activité et votre clientèle.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M4 18h40" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="10" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="20" cy="14" r="1.5" fill="currentColor"/>
+              <path d="M12 26h8M12 31h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="28" y="24" width="12" height="10" rx="2" fill="currentColor" opacity=".25"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Site vitrine professionnel</h3>
+          <p class="service-card__text">Un site élégant qui met en valeur votre garage, atelier ou concession. Présentation des services, horaires, galerie et avis clients.</p>
+          <ul class="service-card__list">
+            <li>Design sur mesure</li>
+            <li>Responsive mobile & tablette</li>
+            <li>Référencement local (SEO)</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Populaire</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 24h36M24 6c-4 6-6.5 11.5-6.5 18s2.5 12 6.5 18M24 6c4 6 6.5 11.5 6.5 18S28 36 24 42" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M9.5 15h29M9.5 33h29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Catalogue & stock en ligne</h3>
+          <p class="service-card__text">Affichez vos véhicules, pièces ou équipements en temps réel. Idéal pour les revendeurs, préparateurs et clubs avec gestion de membres.</p>
+          <ul class="service-card__list">
+            <li>Catalogue dynamique</li>
+            <li>Fiches véhicules détaillées</li>
+            <li>Formulaire de demande d'infos</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L4 14v20l20 10 20-10V14L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M4 14l20 10M44 14L24 24M24 24v20" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor" opacity=".3"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Site club & association</h3>
+          <p class="service-card__text">Fédérez votre communauté moto ou auto avec un espace club complet : actualités, événements, galerie photo et formulaire d'adhésion.</p>
+          <ul class="service-card__list">
+            <li>Agenda des événements</li>
+            <li>Galerie média</li>
+            <li>Espace membres</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 8H8a2 2 0 00-2 2v20a2 2 0 002 2h12l-2 6h10l-2-6h12a2 2 0 002-2V10a2 2 0 00-2-2z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 20l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Refonte & optimisation</h3>
+          <p class="service-card__text">Votre site est vieillissant ou peu performant ? On le modernise, on l'optimise pour Google et on améliore votre taux de conversion.</p>
+          <ul class="service-card__list">
+            <li>Audit complet offert</li>
+            <li>Optimisation vitesse</li>
+            <li>Migration sécurisée</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Référencement local SEO</h3>
+          <p class="service-card__text">Soyez trouvé sur Google par vos clients locaux. Optimisation de votre fiche Google Business, mots-clés ciblés et contenu pertinent.</p>
+          <ul class="service-card__list">
+            <li>Google Business Profile</li>
+            <li>Mots-clés géolocalisés</li>
+            <li>Rapport mensuel</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6C14 6 6 14 6 24s8 18 18 18 18-8 18-18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M32 6l10 10M42 6H32v10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Maintenance & suivi</h3>
+          <p class="service-card__text">Votre site reste à jour, sécurisé et performant dans le temps. Mises à jour, sauvegardes et support réactif inclus.</p>
+          <ul class="service-card__list">
+            <li>Mises à jour régulières</li>
+            <li>Sauvegardes automatiques</li>
+            <li>Support prioritaire</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI -->
+  <section class="pourquoi" id="pourquoi">
+    <div class="section__container">
+      <div class="pourquoi__inner">
+        <div class="pourquoi__content">
+          <span class="section__tag">Pourquoi TDL Services</span>
+          <h2 class="section__title">Une expertise au cœur <span class="accent">du monde moteur</span></h2>
+          <p class="pourquoi__text">
+            Chez TDL Services, on ne crée pas juste des sites web — on crée des outils de croissance pour des passionnés et des professionnels du monde automobile et moto. On parle votre langue.
+          </p>
+          <div class="pourquoi__features">
+            <div class="feature">
+              <div class="feature__icon">✦</div>
+              <div>
+                <h4 class="feature__title">Niche automobile & moto</h4>
+                <p class="feature__text">On connaît vos clients, vos enjeux et les codes de votre secteur. Pas besoin de tout expliquer.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">✦</div>
+              <div>
+                <h4 class="feature__title">Accompagnement personnalisé</h4>
+                <p class="feature__text">RDV en ligne pour analyser votre besoin, suivis réguliers, réponse rapide. Vous n'êtes jamais seul.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">✦</div>
+              <div>
+                <h4 class="feature__title">Micro-entreprise agile</h4>
+                <p class="feature__text">Pas de bureaucratie, pas d'intermédiaire. Vous parlez directement au créateur de votre site.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">✦</div>
+              <div>
+                <h4 class="feature__title">Disponible partout en France</h4>
+                <p class="feature__text">100% remote, consultation par téléphone, mail ou visio. La distance n'est pas un obstacle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pourquoi__visual">
+          <div class="visual-card">
+            <div class="visual-card__line">
+              <span class="visual-card__label">Satisfaction client</span>
+              <span class="visual-card__val">100%</span>
+            </div>
+            <div class="visual-card__bar"><div class="visual-card__fill" style="width:100%"></div></div>
+            <div class="visual-card__line">
+              <span class="visual-card__label">Sites livrés dans les délais</span>
+              <span class="visual-card__val">100%</span>
+            </div>
+            <div class="visual-card__bar"><div class="visual-card__fill" style="width:100%"></div></div>
+            <div class="visual-card__line">
+              <span class="visual-card__label">Spécialisation auto & moto</span>
+              <span class="visual-card__val">100%</span>
+            </div>
+            <div class="visual-card__bar"><div class="visual-card__fill" style="width:100%"></div></div>
+          </div>
+          <div class="visual-badge visual-badge--1">
+            <span class="visual-badge__icon">📍</span>
+            <span>Toute la France</span>
+          </div>
+          <div class="visual-badge visual-badge--2">
+            <span class="visual-badge__icon">⚡</span>
+            <span>Devis en 24h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSUS -->
+  <section class="processus" id="processus">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__tag">Comment ça marche</span>
+        <h2 class="section__title">Votre site en <span class="accent">4 étapes</span></h2>
+        <p class="section__subtitle">Un processus simple et transparent, de la prise de contact à la mise en ligne.</p>
+      </div>
+      <div class="processus__steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h3 class="step__title">Prise de contact</h3>
+            <p class="step__text">Appelez-nous, envoyez un mail ou réservez un RDV en ligne. On échange sur votre projet et vos objectifs sans engagement.</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h3 class="step__title">Analyse & devis</h3>
+            <p class="step__text">On analyse vos besoins en détail et on vous envoie un devis clair et personnalisé sous 24h.</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h3 class="step__title">Création & validation</h3>
+            <p class="step__text">On conçoit votre site et vous présentons chaque étape. Vos retours sont intégrés jusqu'à votre satisfaction totale.</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <div class="step__content">
+            <h3 class="step__title">Mise en ligne & suivi</h3>
+            <p class="step__text">Votre site est lancé ! On s'occupe de tout et on reste disponibles pour la maintenance et les évolutions futures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section__container">
+      <div class="contact__inner">
+        <div class="contact__info">
+          <span class="section__tag">Parlons de votre projet</span>
+          <h2 class="section__title">Prêt à passer la <span class="accent">vitesse supérieure</span> ?</h2>
+          <p class="contact__text">Réservez un rendez-vous en ligne gratuit ou contactez-nous directement. On répond rapidement.</p>
+
+          <div class="contact__methods">
+            <a href="tel:0778246173" class="contact__method">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact__method-label">Téléphone</span>
+                <span class="contact__method-val">07 78 24 61 73</span>
+              </div>
+            </a>
+
+            <a href="mailto:contact@tdlservices.fr" class="contact__method">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact__method-label">Email</span>
+                <span class="contact__method-val">contact@tdlservices.fr</span>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/tdl_services/" target="_blank" rel="noopener" class="contact__method">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact__method-label">Instagram</span>
+                <span class="contact__method-val">@tdl_services</span>
+              </div>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61576950905423&locale=fr_FR" target="_blank" rel="noopener" class="contact__method">
+              <div class="contact__method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact__method-label">Facebook</span>
+                <span class="contact__method-val">TDL Services</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name" class="form__label">Nom / Société *</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Jean Dupont / Garage Dupont" required />
+            </div>
+            <div class="form__group">
+              <label for="phone" class="form__label">Téléphone</label>
+              <input type="tel" id="phone" name="phone" class="form__input" placeholder="06 XX XX XX XX" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">Email *</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="votre@email.fr" required />
+          </div>
+          <div class="form__group">
+            <label for="type" class="form__label">Vous êtes</label>
+            <select id="type" name="type" class="form__input form__select">
+              <option value="">Sélectionnez…</option>
+              <option value="garage">Garage / Atelier</option>
+              <option value="concessionnaire">Concessionnaire</option>
+              <option value="club">Club / Association</option>
+              <option value="preparateur">Préparateur</option>
+              <option value="particulier">Particulier passionné</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label">Votre projet *</label>
+            <textarea id="message" name="message" class="form__input form__textarea" placeholder="Décrivez votre projet en quelques mots…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn__text">Envoyer ma demande</span>
+            <span class="btn__icon">→</span>
+          </button>
+          <p class="form__notice">Réponse garantie sous 24h ouvrées · Aucun engagement</p>
+          <div class="form__success" id="formSuccess">
+            <span>✓</span> Message envoyé ! On revient vers vous rapidement.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo">
+            <span class="nav__logo-tdl">TDL</span><span class="nav__logo-services">Services</span>
+          </a>
+          <p class="footer__tagline">Création de sites web<br />pour l'univers auto & moto.</p>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pourquoi">Pourquoi nous</a></li>
+            <li><a href="#processus">Processus</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Contact</h4>
+          <ul>
+            <li><a href="tel:0778246173">07 78 24 61 73</a></li>
+            <li><a href="mailto:contact@tdlservices.fr">contact@tdlservices.fr</a></li>
+            <li>Disponible partout en France</li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4 class="footer__heading">Réseaux</h4>
+          <div class="footer__social-links">
+            <a href="https://www.instagram.com/tdl_services/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61576950905423&locale=fr_FR" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 TDL Services — Auto-entrepreneur. Tous droits réservés.</p>
+        <p>Conçu avec passion pour l'univers moteur 🏎️</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
