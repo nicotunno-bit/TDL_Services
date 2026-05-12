@@ -65,16 +65,16 @@ form.addEventListener('submit', (e) => {
     type:    document.getElementById('type').value,
   };
 
-  fetch('contact.php', {
+  fetch('https://formspree.io/f/mnjwwgqz', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify(payload),
   })
     .then(res => res.json())
     .then(data => {
       btn.disabled = false;
       btnText.textContent = 'Envoyer ma demande';
-      if (data.success) {
+      if (data.ok) {
         form.reset();
         successMsg.classList.add('visible');
         setTimeout(() => successMsg.classList.remove('visible'), 5000);
