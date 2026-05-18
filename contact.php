@@ -16,7 +16,7 @@ if (!$name || !$email || !$message) {
     exit;
 }
 
-$to      = "contact@tdlservices.fr";
+$to      = "n.tunno@tdlservices.fr";
 $subject = "Demande de devis via site";
 $body    = "Nom: $name\nEmail: $email";
 if ($phone)   $body .= "\nTéléphone: $phone";
